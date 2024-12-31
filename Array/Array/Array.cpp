@@ -11,7 +11,7 @@ double sumArray(int n)
 
 	for (int i = 0; i < n; i++)
 	{
-		cout << i + 1 << "¹øÂ° ¿ø¼Ò¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. : ";
+		cout << i + 1 << "ë²ˆì§¸ ì›ì†Œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”. : ";
 		cin >> array[i];
 	}
 
@@ -22,7 +22,8 @@ double sumArray(int n)
 		sum += array[i];
 	}
 
-
+	delete[] array;
+	
 	return sum;
 }
 
@@ -43,7 +44,7 @@ int main()
 
 	int n;
 
-	cout << "¿ø¼ÒÀÇ °¹¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. : ";
+	cout << "ì›ì†Œì˜ ê°¯ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”. : ";
 	cin >> n;
 
 	double sum = 0;
@@ -52,8 +53,8 @@ int main()
 	sum = sumArray(n);
 	avg = avgArray(n, sum);
 
-	cout << "¹è¿­ÀÇ ÇÕÀº :" << sum << endl;
-	cout << "¹è¿­ÀÇ Æò±ÕÀº :" << avg << endl;
+	cout << "ë°°ì—´ì˜ í•©ì€ :" << sum << endl;
+	cout << "ë°°ì—´ì˜ í‰ê· ì€ :" << avg << endl;
 
 
 	return 0;
