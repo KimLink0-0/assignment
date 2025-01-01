@@ -22,7 +22,9 @@ double sumArray(int n)
 		sum += array[i];
 	}
 
-	delete[] array;
+	delete[] array; // 메모리 해제
+	array = nullptr;  // 포인터 주소 null 로 변경
+	
 	
 	return sum;
 }
